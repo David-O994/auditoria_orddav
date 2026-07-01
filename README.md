@@ -1,16 +1,44 @@
-# React + Vite
+# 🛡️ Auditoría de Seguridad - SuperMax
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto corresponde a un **informe de auditoría legal y técnica** realizado sobre el portal de clientes de la empresa ficticia **SuperMax**, una cadena de supermercados que opera en el rubro del retail.  
+El objetivo es demostrar vulnerabilidades comunes en aplicaciones web (SQL Injection, XSS e Inyección de Comandos), medir su impacto mediante una matriz de riesgos y proponer políticas de prevención, controles de mitigación y un plan de recuperación (DR).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Sitio Web del Informe
+El informe completo está disponible en el siguiente enlace:  
+👉 [https://auditoriaorddav1.vercel.app/](https://auditoriaorddav1.vercel.app/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 Estructura del Proyecto
+El proyecto está compuesto por diferentes componentes React, cada uno representando una sección del informe:
 
-## Expanding the ESLint configuration
+- `resumen.jsx` → Pantalla de inicio con resumen corporativo.  
+- `sqli.jsx` → Vulnerabilidad de Inyección SQL.  
+- `xss.jsx` → Vulnerabilidad de Cross-Site Scripting.  
+- `comandos.jsx` → Vulnerabilidad de Inyección de Comandos.  
+- `activos.jsx` → Activos de información y riesgos asociados.  
+- `matriz.jsx` → Matriz de riesgos y mapa de calor.  
+- `controles.jsx` → Políticas de prevención y controles de mitigación.  
+- `recuperacion.jsx` → Plan de mejora tecnológica y recuperación (DR).  
+- `prompts.jsx` → Documentación de los prompts utilizados y detalles finales.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tecnologías Utilizadas
+- **React + Vite** → Framework de desarrollo frontend.  
+- **Tailwind CSS** → Estilos modernos y adaptables.  
+- **Lucide Icons** → Iconografía profesional.  
+- **Vercel** → Plataforma de despliegue.  
+
+---
+
+## 📌 Objetivo
+Este repositorio busca servir como **ejemplo práctico de auditoría de seguridad aplicada a un entorno controlado**, integrando documentación técnica, visualizaciones y medidas de prevención para fortalecer la seguridad de aplicaciones web.
+
+---
+
+## 📜 Licencia
+Este proyecto es de carácter académico y no está destinado a uso comercial.  
+Puedes utilizarlo como referencia para estudios, prácticas y proyectos relacionados con **seguridad informática y auditoría legal**.
