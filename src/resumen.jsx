@@ -10,7 +10,7 @@ import {
   TrendingUp,
 } from 'lucide-react'
 
-function Resumen({ onOpenSqli, onOpenXss, onOpenComandos }) {
+function Resumen({ onOpenSqli, onOpenXss, onOpenComandos, onOpenActivos, onOpenMatriz, onOpenControles, onOpenRecuperacion, onOpenPrompts }) {
   const [theme, setTheme] = useState('dark')
 
   const isDark = theme === 'dark'
@@ -98,7 +98,7 @@ function Resumen({ onOpenSqli, onOpenXss, onOpenComandos }) {
               </div>
             </div>
 
-            <div className="mt-6 grid gap-3 md:grid-cols-3">
+            <div className="mt-6 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
               <div className={`rounded-2xl border p-4 ${isDark ? 'border-cyan-500/20 bg-cyan-500/10' : 'border-cyan-400/20 bg-cyan-50'}`}>
                 <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">Sección destacada</p>
                 <h3 className="mt-1 text-lg font-semibold">Inyección SQL</h3>
@@ -128,6 +128,61 @@ function Resumen({ onOpenSqli, onOpenXss, onOpenComandos }) {
                   Visualiza el análisis de ejecución remota y sus medidas de contención.
                 </p>
                 <button type="button" onClick={onOpenComandos} className="mt-3 rounded-full bg-rose-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-rose-400">
+                  Ver detalle
+                </button>
+              </div>
+
+              <div className={`rounded-2xl border p-4 ${isDark ? 'border-emerald-500/20 bg-emerald-500/10' : 'border-emerald-400/20 bg-emerald-50'}`}>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-400">Sección destacada</p>
+                <h3 className="mt-1 text-lg font-semibold">Activos de información</h3>
+                <p className={`mt-2 text-sm ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>
+                  Revisa los activos críticos y los riesgos asociados de forma organizada y colapsable.
+                </p>
+                <button type="button" onClick={onOpenActivos} className="mt-3 rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-400">
+                  Ver detalle
+                </button>
+              </div>
+
+              <div className={`rounded-2xl border p-4 ${isDark ? 'border-indigo-500/20 bg-indigo-500/10' : 'border-indigo-400/20 bg-indigo-50'}`}>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-indigo-400">Sección destacada</p>
+                <h3 className="mt-1 text-lg font-semibold">Matriz de riesgo</h3>
+                <p className={`mt-2 text-sm ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>
+                  Consulta la evaluación de probabilidad, impacto y nivel de severidad en una vista profesional.
+                </p>
+                <button type="button" onClick={onOpenMatriz} className="mt-3 rounded-full bg-indigo-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-400">
+                  Ver detalle
+                </button>
+              </div>
+
+              <div className={`rounded-2xl border p-4 ${isDark ? 'border-violet-500/20 bg-violet-500/10' : 'border-violet-400/20 bg-violet-50'}`}>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-violet-400">Sección destacada</p>
+                <h3 className="mt-1 text-lg font-semibold">Controles y políticas</h3>
+                <p className={`mt-2 text-sm ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>
+                  Revisa las políticas de prevención y los controles de mitigación de la empresa.
+                </p>
+                <button type="button" onClick={onOpenControles} className="mt-3 rounded-full bg-violet-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-violet-400">
+                  Ver detalle
+                </button>
+              </div>
+
+              <div className={`rounded-2xl border p-4 ${isDark ? 'border-emerald-500/20 bg-emerald-500/10' : 'border-emerald-400/20 bg-emerald-50'}`}>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-400">Sección destacada</p>
+                <h3 className="mt-1 text-lg font-semibold">Recuperación</h3>
+                <p className={`mt-2 text-sm ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>
+                  Revisa el plan de continuidad, respaldo y recuperación ante desastres.
+                </p>
+                <button type="button" onClick={onOpenRecuperacion} className="mt-3 rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-400">
+                  Ver detalle
+                </button>
+              </div>
+
+              <div className={`rounded-2xl border p-4 ${isDark ? 'border-fuchsia-500/20 bg-fuchsia-500/10' : 'border-fuchsia-400/20 bg-fuchsia-50'}`}>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-fuchsia-400">Sección destacada</p>
+                <h3 className="mt-1 text-lg font-semibold">Prompts</h3>
+                <p className={`mt-2 text-sm ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>
+                  Explora el catálogo de prompts utilizados para construir esta auditoría y sus secciones.
+                </p>
+                <button type="button" onClick={onOpenPrompts} className="mt-3 rounded-full bg-fuchsia-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-fuchsia-400">
                   Ver detalle
                 </button>
               </div>

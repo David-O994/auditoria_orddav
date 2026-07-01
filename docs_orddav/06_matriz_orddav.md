@@ -54,4 +54,4 @@ Zona Baja (Baja probabilidad o impacto bajo):
 
 Errores menores en distribución o inventarios (Inventario)
 
-Las vulnerabilidades de inyección SQL y XSS se ubican en la zona crítica, ya que combinan alta probabilidad de explotación con un impacto severo en confidencialidad, integridad y disponibilidad. La inyección de comandos también se clasifica como crítica por su potencial de comprometer la infraestructura completa.
+Explicación: Las vulnerabilidades de inyección SQL y XSS se ubican en la zona crítica, ya que combinan alta probabilidad de explotación con un impacto severo en confidencialidad, integridad y disponibilidad. La inyección de comandos también se clasifica como crítica por su potencial de comprometer la infraestructura completa.
